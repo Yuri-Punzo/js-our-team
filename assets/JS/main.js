@@ -54,10 +54,14 @@ cardsCreator(ourTeam)
 function cardsCreator(teamArrayOfObjects) {
     for (let i = 0; i < teamArrayOfObjects.length; i++) {
         const teamMember = teamArrayOfObjects[i];
-        //console.log(teamMember);
-        const card = document.createElement("div")
-        card.classList.add("card", "col")
-        selection.append(card)
-        card.innerHTML = `<h4>${teamMember.name}</h4> <p>${teamMember.role}</p> <img src="./assets/img/${teamMember.image}" alt="">`
+        console.log(teamMember);
+        cardMarkUp(teamMember)
     }
+}
+
+function cardMarkUp(object) {
+    const card = document.createElement("div")
+    card.classList.add("card", "col")
+    selection.append(card)
+    card.innerHTML = `<h4>${object.name}</h4> <p>${object.role}</p> <img src="./assets/img/${object.image}" alt="">`
 }
