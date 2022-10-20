@@ -54,7 +54,7 @@ cardsCreator(ourTeam)
 function cardsCreator(teamArrayOfObjects) {
     for (let i = 0; i < teamArrayOfObjects.length; i++) {
         const teamMember = teamArrayOfObjects[i];
-        console.log(teamMember);
+        //console.log(teamMember);
         cardMarkUp(teamMember)
     }
 }
