@@ -31,7 +31,7 @@ const ourTeam = [
     },
     {
         Name: "Angela Lopez",
-        Role: "Social Media",
+        Role: "Social Media Manager",
         Image: "angela-lopez-social-media-manager.jpg"
     },
     {
