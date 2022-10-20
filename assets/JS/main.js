@@ -43,22 +43,21 @@ const ourTeam = [
         Name: "Barbara Ramos",
         Role: "Graphic Designer",
         Image: "barbara-ramos-graphic-designer.jpg"
-    }
+    },
 ]
 
 //console.log(ourTeam);
 
-
 const selection = document.querySelector(".info")
 
-for (let i = 0; i < ourTeam.length; i++) {
-    const teamMember = ourTeam[i];
-    console.log(teamMember);
-    const element = document.createElement("div")
-    element.classList.add("card", "col")
-    selection.append(element)
-    element.innerHTML = `<h4>${teamMember.Name}</h4> <p>${teamMember.Role}</p> <img src="./assets/img/${teamMember.Image}" alt="">`
+cardsCreator(ourTeam)
+function cardsCreator(teamArrayOfObjects) {
+    for (let i = 0; i < teamArrayOfObjects.length; i++) {
+        const teamMember = teamArrayOfObjects[i];
+        //console.log(teamMember);
+        const card = document.createElement("div")
+        card.classList.add("card", "col")
+        selection.append(card)
+        card.innerHTML = `<h4>${teamMember.Name}</h4> <p>${teamMember.Role}</p> <img src="./assets/img/${teamMember.Image}" alt="">`
+    }
 }
-
-
-
