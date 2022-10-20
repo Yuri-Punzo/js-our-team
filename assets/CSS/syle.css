@@ -4,7 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(36, 36, 36);
-    color: white;
+.info {
+    width: 70%;
+    margin: 5rem auto;
+    gap: 1rem;
+}
+
+img {
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
 }

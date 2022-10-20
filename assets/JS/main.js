@@ -31,7 +31,7 @@ const ourTeam = [
     },
     {
         Name: "Angela Lopez",
-        Role: "Social Media Manager",
+        Role: "Social Media",
         Image: "angela-lopez-social-media-manager.jpg"
     },
     {
@@ -55,8 +55,9 @@ for (let i = 0; i < ourTeam.length; i++) {
     const teamMember = ourTeam[i];
     console.log(teamMember);
     const element = document.createElement("div")
+    element.classList.add("card", "col")
     selection.append(element)
-    element.innerHTML = teamMember.Name + " " + teamMember.Role + " " + teamMember.Image;
+    element.innerHTML = `<h4>${teamMember.Name}</h4> <p>${teamMember.Role}</p> <img src="./assets/img/${teamMember.Image}" alt="">`
 }
 
 
