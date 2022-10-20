@@ -15,34 +15,34 @@ BONUS 2: Organizzare i singoli membri in card/schede */
 
 const ourTeam = [
     {
-        Name: "Wayne Barnett",
-        Role: "Founder & CEO",
-        Image: "wayne-barnett-founder-ceo.jpg"
+        name: "Wayne Barnett",
+        role: "Founder & CEO",
+        image: "wayne-barnett-founder-ceo.jpg"
     },
     {
-        Name: "Angela Caroll",
-        Role: "Chief Editor",
-        Image: "angela-caroll-chief-editor.jpg"
+        name: "Angela Caroll",
+        role: "Chief Editor",
+        image: "angela-caroll-chief-editor.jpg"
     },
     {
-        Name: "Walter Gordon",
-        Role: "Office Manager",
-        Image: "walter-gordon-office-manager.jpg"
+        name: "Walter Gordon",
+        role: "Office Manager",
+        image: "walter-gordon-office-manager.jpg"
     },
     {
-        Name: "Angela Lopez",
-        Role: "Social Media Manager",
-        Image: "angela-lopez-social-media-manager.jpg"
+        name: "Angela Lopez",
+        role: "Social Media Manager",
+        image: "angela-lopez-social-media-manager.jpg"
     },
     {
-        Name: "Scott Estrada",
-        Role: "Developer",
-        Image: "scott-estrada-developer.jpg"
+        name: "Scott Estrada",
+        role: "Developer",
+        image: "scott-estrada-developer.jpg"
     },
     {
-        Name: "Barbara Ramos",
-        Role: "Graphic Designer",
-        Image: "barbara-ramos-graphic-designer.jpg"
+        name: "Barbara Ramos",
+        role: "Graphic Designer",
+        image: "barbara-ramos-graphic-designer.jpg"
     },
 ]
 
@@ -58,6 +58,6 @@ function cardsCreator(teamArrayOfObjects) {
         const card = document.createElement("div")
         card.classList.add("card", "col")
         selection.append(card)
-        card.innerHTML = `<h4>${teamMember.Name}</h4> <p>${teamMember.Role}</p> <img src="./assets/img/${teamMember.Image}" alt="">`
+        card.innerHTML = `<h4>${teamMember.name}</h4> <p>${teamMember.role}</p> <img src="./assets/img/${teamMember.image}" alt="">`
     }
 }
